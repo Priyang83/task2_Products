@@ -11,6 +11,10 @@
 
     <button class="company-btn" onclick="sortdata('asc')">ASC</button>
     <button class="company-btn" onclick="sortdata('dsc')">DSC</button>
+    <strong>Cart Count :- </strong>
+    <strong id="cart_count"></strong><br>
+    <button onclick="checkout()">Checkout</button>
+    <strong id="checkout_val"></strong>
     <!-- products -->
     <section class="products">
       <!-- filters -->
@@ -39,6 +43,7 @@
           <footer>
             <h5 class="product-name">high-back bench</h5>
             <span class="product-price">$9.99</span>
+            <button onclick="addCart('${val.id}')">Add To Cart</button>
           </footer>
         </article>
 
